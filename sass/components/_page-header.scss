@@ -1,0 +1,26 @@
+.header {
+    border-bottom: 1px solid $header-board-color;
+  }
+  
+.header .container {
+    display: flex;
+    align-items: center;
+  }
+
+.container .header__navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+.header__navigation .header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
+
+.header__navigation {
+    @extend %list;
+    display: flex;
+    align-items: center;
+  }
+  
