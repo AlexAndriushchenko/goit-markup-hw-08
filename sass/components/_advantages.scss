@@ -1,37 +1,63 @@
+.features {
+  padding: 60px 0;
+  align-content: center;
+}
+
 .advantages {
-    @extend %list;
-    display: flex;
-    align-items: center;
+  @extend %list;
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+
+  @include mq(desktop) {
+    flex-wrap: inherit;
   }
-  
+
   .advantages__item {
-    margin-right: 30px;
-    width: 270px;
-    &:last-child {
-      margin-right: 0;
+    // margin-right: 30px;
+    //width: 270px;
+    width: 100%;
+    max-width: 450px;
+
+    @include mq(tablet) {
+      width: 354px;
+      height: 251px;
+    }
+
+    @include mq(desktop) {
+      width: 270px;
+    }
+
+    .advantages__pictures {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      //width: 270px;
+      height: 120px;
+      background-color: $team-bg-color;
+      border-radius: 4px;
+    }
+
+    .advantages__header {
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      text-transform: uppercase;
+      text-align: center;
+
+      @include mq(tablet) {
+        text-align: left;
+      }
+    }
+
+    .advantages__description {
+      line-height: 1.71;
+      color: $text-color;
     }
   }
-  
-  .advantages__pictures {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-  }
-  
-  .advantages__header {
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-  }
-  
-  .advantages__description {
-    line-height: 1.71;
-    color: $text-color;
-  }
+}

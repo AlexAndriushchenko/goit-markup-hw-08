@@ -1,32 +1,43 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
-
   color: $primary-text-color;
+
+  @include mq(desktop) {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .clients-list {
   @extend %list;
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
   align-items: center;
 }
 
-.clients-list__item {
-  &:not(:last-child)
-  {
-  margin-right: 30px;
-  }
-}
+// .clients-list__item {
+//   &:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
 
 .clients-list__link {
   display: flex;

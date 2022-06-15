@@ -56,6 +56,10 @@
   position: absolute;
   top: 28px;
   left: 12px;
+
+  @include mq(desktop) {
+    top: 35px;
+  }
 }
 
 .modal-form__comment {
@@ -174,8 +178,8 @@
 }
 
 .modal-form__btn {
-  width: 200px;
-  height: 50px;
+  min-width: 200px;
+  // height: 50px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
