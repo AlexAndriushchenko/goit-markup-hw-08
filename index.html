@@ -334,31 +334,63 @@
           <h2 class="activity__title">Чем мы занимаемся</h2>
           <ul class="activity-list list">
             <li class="activity-list__item">
-              <img
-                src="./images/img1.jpg"
-                alt="планшет с клавиатурой"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/activity/activity-1-ds.jpg    1x,
+                    ./images/activity/activity-1-ds@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/activity/activity-1-ds.jpg"
+                  alt=""
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
               <p class="activity-list__title">Десктопные приложения</p>
             </li>
-
             <li class="activity-list__item">
-              <img
-                src="./images/img2.jpg"
-                alt="ноутбук"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/activity/activity-2-ds.jpg    1x,
+                    ./images/activity/activity-2-ds@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/activity/activity-2-ds.jpg"
+                  alt=""
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
               <p class="activity-list__title">Мобильные приложения</p>
             </li>
             <li class="activity-list__item">
-              <img
-                src="./images/img3.jpg"
-                alt="графический планшет"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/activity/activity-3-ds.jpg    1x,
+                    ./images/activity/activity-3-ds@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/activity/activity-3-ds.jpg"
+                  alt=""
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
               <p class="activity-list__title">Дизайнерские решения</p>
             </li>
           </ul>
@@ -371,12 +403,37 @@
           <h2 class="team__header">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img
-                src="./images/team/product_designer.jpg"
-                alt="дизайнер продукта"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/designer-ds.jpg    1x,
+                    ./images/team/designer-ds@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/designer-tb.jpg    1x,
+                    ./images/team/designer-tb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/designer-mb.jpg    1x,
+                    ./images/team/designer-mb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/designer-mb.jpg"
+                  alt="дизайнер продукта"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-list__workers">
                 <h3 class="team-list__worker">Игорь Демьяненко</h3>
                 <p class="team-list__profession">Product Designer</p>
@@ -453,12 +510,37 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/team/frontend_developer.jpg"
-                alt="разработчик"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/developer-ds.jpg    1x,
+                    ./images/team/developer-ds@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/developer-tb.jpg    1x,
+                    ./images/team/developer-tb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/developer-mb.jpg    1x,
+                    ./images/team/developer-mb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/developer-mb.jpg"
+                  alt="разработчик"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-list__workers">
                 <h3 class="team-list__worker">Ольга Репина</h3>
                 <p class="team-list__profession">Frontend Developer</p>
@@ -535,12 +617,37 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/team/marketingnew.jpg"
-                alt="маркетинг"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/marketing-ds.jpg    1x,
+                    ./images/team/marketing-ds@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/marketing-tb.jpg    1x,
+                    ./images/team/marketing-tb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/marketing-mb.jpg    1x,
+                    ./images/team/marketing-mb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/marketing-mb.jpg"
+                  alt="маркетинг"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-list__workers">
                 <h3 class="team-list__worker">Николай Тарасов</h3>
                 <p class="team-list__profession">Marketing</p>
@@ -617,12 +724,37 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                src="./images/team/ui_designer.jpg"
-                alt="дизайнер"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/ui-designer-ds.jpg    1x,
+                    ./images/team/ui-designer-ds@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/ui-designer-tb.jpg    1x,
+                    ./images/team/ui-designer-tb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/ui-designer-mb.jpg    1x,
+                    ./images/team/ui-designer-mb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/team/ui-designer-mb.jpg"
+                  alt="дизайнер"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-list__workers">
                 <h3 class="team-list__worker">Михаил Ермаков</h3>
                 <p class="team-list__profession">UI Designer</p>
@@ -865,8 +997,9 @@
             </svg>
           </button>
         </form>
+      </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
-  <script src="./js/modal.js"></script>
-  <script src="./js/menu.js"></script>
 </html>

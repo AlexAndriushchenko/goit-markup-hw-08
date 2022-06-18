@@ -1,12 +1,35 @@
 .overlay {
   width: 100%;
   min-height: 400px;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/overlay.jpg");
+
+  background-image: url(../images/header/header-mb.jpg),
+    linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+  @include mq(retina) {
+    background-image: url(../images/header/header-mb@2x.jpg),
+      linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
+
+  @include mq(tablet) {
+    background-image: url(../images/header/header-tb.jpg),
+      linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+    @include mq(retina) {
+      background-image: url(../images/header/header-tb@2x.jpg),
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    }
+  }
+
+  @include mq(desktop) {
+    background-image: url(../images/header/header-ds.jpg),
+      linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+    @include mq(retina) {
+      background-image: url(../images/header/header-ds@2x.jpg),
+        linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    }
+  }
+
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
