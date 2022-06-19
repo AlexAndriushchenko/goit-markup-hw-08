@@ -42,7 +42,6 @@
 //   align-items: baseline;
 // }
 .footer-container {
-  
   @include mq(tablet) {
     display: flex;
     justify-content: center;
@@ -196,6 +195,9 @@
   border-radius: 4px;
   outline: none;
   cursor: pointer;
+  @include mq(desktop) {
+    width: 358px;
+  }
 }
 
 .subscribe-form__btn {

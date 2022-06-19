@@ -33,23 +33,25 @@
   align-items: center;
 }
 
-// .clients-list__item {
-//   &:not(:last-child) {
-//     margin-right: 30px;
-//   }
-// }
-
 .clients-list__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
 
   transition: border-color $fast-anim;
+
+  @include mq(tablet) {
+    width: 226px;
+  }
+
+  @include mq(desktop) {
+    width: 170px;
+  }
 
   &:hover,
   &:focus {

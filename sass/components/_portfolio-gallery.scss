@@ -38,15 +38,11 @@
   &:hover .portfolio-gallery__text-anim,
   &:focus .portfolio-gallery__text-anim {
     transform: translateX(0);
-    padding: 63px 24px;
   }
 }
 
 .portfolio-gallery__item .portfolio-gallery__description {
   padding: 20px 24px;
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
-  border-bottom: 1px solid #eee;
 }
 
 .portfolio-gallery__link {
@@ -54,7 +50,7 @@
   width: 100%;
   text-decoration: none;
   transition: box-shadow $fast-anim;
-
+  border: 1px solid #eee;
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -66,20 +62,28 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 79.5%;
+  padding-top: 65%;
+  @include mq(tablet) {
+    padding-top: 83%;
+  }
+  @include mq(desktop) {
+    padding-top: 79.5%;
+  }
+  picture,
   img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: none;
   }
 }
 
 .portfolio-gallery__text-anim {
   position: absolute;
-  top: 0;
+  top: 1px;
   left: 0;
 
   display: flex;
@@ -97,7 +101,7 @@
 
   color: $title-text-color;
   background: rgba(33, 150, 243, 0.9);
-
+  padding: 63px 24px;
   transform: translateY(100%);
   transition: transform $fast-anim;
 }

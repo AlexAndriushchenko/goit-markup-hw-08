@@ -1,6 +1,10 @@
 .features {
   padding: 60px 0;
   align-content: center;
+
+  @include mq(desktop) {
+    padding: 94px 0;
+  }
 }
 
 .advantages {
@@ -24,11 +28,12 @@
 
     @include mq(tablet) {
       width: 354px;
-      height: 251px;
+      height: 226px;
     }
 
     @include mq(desktop) {
       width: 270px;
+      height: 251px;
     }
 
     .advantages__pictures {
